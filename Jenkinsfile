@@ -34,3 +34,9 @@ pipeline {
         }
     }
 }
+post {
+  always {
+        chuckNorris()
+    
+  }
+}
