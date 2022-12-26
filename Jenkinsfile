@@ -33,10 +33,9 @@ pipeline {
             }
         }
     }
-}
-post {
-  always {
-        chuckNorris()
-    
-  }
+        post {
+        always {
+             chuckNorris()   
+        }
+    }
 }
