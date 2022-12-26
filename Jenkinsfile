@@ -22,8 +22,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'nohup node index.js &'
-                sh 'curl 192.168.1.18:3000 &'
-                sh 'sleep 60'
+                sh 'curl 192.168.1.18:3000'
    
             }
         }
