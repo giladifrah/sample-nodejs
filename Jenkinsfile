@@ -12,10 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh ''' export APP=DEVELOP;  
-                    npm install;
-                    ls;
-                    echo $APP; '''
+                sh '''docker build '''
                
             }
         }
