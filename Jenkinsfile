@@ -9,8 +9,7 @@ pipeline {
                 cleanWs()
                 
                 
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/giladifrah/sample-1.git']]])
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/digitalocean/sample-nodejs.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/giladifrah/sample-nodejs.git']]])
             }
         }
         stage('Build') {
