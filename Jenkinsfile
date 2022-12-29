@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'docker run nodeapp --name ournode'
+                sh 'docker run nodeapp -name ournode'
                 sh 'sleep 20'
                 sh 'docker ps -l'
                 sh 'curl 127.0.0.1:3000'
